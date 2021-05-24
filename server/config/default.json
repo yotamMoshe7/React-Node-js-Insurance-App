@@ -1,0 +1,4 @@
+{
+  "mongoURI":"mongodb+srv://yotammoshe:yotam7373@yotam.grpr0.mongodb.net/insuranceDB?retryWrites=true&w=majority",
+  "sprouttServerURL": "https://okapi-staging-3.sproutt.com/api/1/assignment/quotes"
+}

@@ -1,0 +1,15 @@
+.toggle-element-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.left-toggle {
+  border-color: gray !important;
+  width: 50%;
+}
+
+.right-toggle {
+  /* margin-left: 22% !important; */
+  border-color: gray !important;
+  width: 50%;
+}
