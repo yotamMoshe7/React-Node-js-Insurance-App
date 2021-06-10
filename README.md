@@ -1,5 +1,5 @@
 # React-Node-js-Insurance-App
-In this application you can fill out a form and receive an insurance offer based on form input.
+In this application you can fill out a form and receive an insurance offer based on form input.  
 For building that app i used React Hooks, Redux, Redux Saga, Matirial Ui, Node Js backend and Styled Components.   
 
 ## Form Page
