@@ -1,5 +1,4 @@
 import React from 'react';
-import './Tab.css';
 import { useTheme } from '@material-ui/core/styles';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import { useHistory } from 'react-router';
@@ -7,6 +6,7 @@ import {
   FORM_PAGE_ROUTE,
   OFFER_PAGE_ROUTE,
 } from '../../utility/constants/Constants';
+import { Wrapper, Button } from './Tab.styles';
 
 export const Tab = () => {
   const history = useHistory();
@@ -26,19 +26,13 @@ export const Tab = () => {
   };
 
   return (
-    <div className={matches ? 'mobile-tab' : 'tab'}>
-      <button
-        onClick={formButtonClick}
-        className={matches ? 'mobile-form-button' : 'form-button'}
-      >
+    <Wrapper matches={matches}>
+      <Button onClick={formButtonClick} matches={matches}>
         Form
-      </button>
-      <button
-        onClick={offerButtonClick}
-        className={matches ? 'mobile-offer-button' : 'offer-button'}
-      >
+      </Button>
+      <Button onClick={offerButtonClick} matches={matches} isOfferButton={true}>
         Offer
-      </button>
-    </div>
+      </Button>
+    </Wrapper>
   );
 };

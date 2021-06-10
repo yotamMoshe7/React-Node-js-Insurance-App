@@ -12,6 +12,9 @@ const userInputValidation = (zipCode, gender, birthdate, income) => {
   }
 
   // Check income
+  if (income === null) {
+    errors.push('Please fill all fields');
+  }
   if (parseInt(income) < 25000) {
     errors.push('Min annual income 25000$');
   }

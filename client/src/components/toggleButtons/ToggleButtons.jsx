@@ -1,7 +1,6 @@
 import React from 'react';
-import './ToggleButtons.css';
-import ToggleButton from '@material-ui/lab/ToggleButton';
 import ToggleButtonGroup from '@material-ui/lab/ToggleButtonGroup';
+import { Wrapper, Button } from './ToggleButtons.styles';
 
 export const ToggleButtons = ({ gender, setGender }) => {
   const handleChange = (event, nextView) => {
@@ -9,15 +8,15 @@ export const ToggleButtons = ({ gender, setGender }) => {
   };
 
   return (
-    <div className='toggle-element-wrapper'>
+    <Wrapper>
       <ToggleButtonGroup value={gender} exclusive onChange={handleChange}>
-        <ToggleButton value='male' aria-label='bold' className='left-toggle'>
+        <Button value='male' aria-label='bold'>
           Male
-        </ToggleButton>
-        <ToggleButton value='female' aria-label='bold' className='right-toggle'>
+        </Button>
+        <Button value='female' aria-label='bold'>
           Female
-        </ToggleButton>
+        </Button>
       </ToggleButtonGroup>
-    </div>
+    </Wrapper>
   );
 };

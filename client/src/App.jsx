@@ -6,8 +6,8 @@ import {
 } from './utility/constants/Constants';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Tab } from './components/tab/Tab';
-import { FormPage } from './pages/form-page/FormPage';
-import { OfferPage } from './pages/offer-page/OfferPage';
+import FormPage from './pages/form-page/FormPage';
+import OfferPage from './pages/offer-page/OfferPage';
 
 const App = () => {
   return (

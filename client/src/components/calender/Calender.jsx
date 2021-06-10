@@ -13,7 +13,7 @@ export const Calender = ({ birthdate, setBirthdate }) => {
   };
 
   return (
-    <Grid container item xs={10} md={8}>
+    <Grid container item xs={6} sm={4} md={8} justify='center'>
       <MuiPickersUtilsProvider utils={DateFnsUtils}>
         <KeyboardDatePicker
           margin='normal'
